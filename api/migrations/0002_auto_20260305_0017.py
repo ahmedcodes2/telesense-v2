@@ -11,6 +11,9 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RunSQL(
+            "CREATE EXTENSION IF NOT EXISTS timescaledb;"
+        ),
+        migrations.RunSQL(
             sql="alter table telemetry drop constraint telemetry_pkey;"
         ),
         migrations.RunSQL(

@@ -1,0 +1,7 @@
+django
+djangorestframework
+djangorestframework_stubs
+django-cors-headers
+psycopg[binary]
+pytest
+pytest-django
